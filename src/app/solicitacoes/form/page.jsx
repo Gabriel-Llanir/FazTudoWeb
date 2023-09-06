@@ -8,13 +8,13 @@ import { useState } from "react";
 import { redirect } from 'next/navigation'
 
 
-export default function FormContas(){
+export default function FormSolicitacao(){
     const [erro, setErro] = useState("")
 
     async function onCreate(formData){
         const resp = await create(formData)
         if (resp.message === "ok"){
-            redirect("/contas")
+            redirect("/solicitacoes")
             return
         }
         setErro(resp.message)
@@ -25,7 +25,7 @@ export default function FormContas(){
             <NavBar active={"contas"} />
             
             <main className="bg-slate-900 mt-10 m-auto max-w-lg p-2 rounded">
-                <h2 className="text-2xl font-bold">Criar conta</h2>
+                <h2 className="text-2xl font-bold">Criar solicitação</h2>
 
                 <form action={onCreate} className="p-4">
                     <InputText name="nome" label="nome" id="nome"/>
@@ -33,7 +33,7 @@ export default function FormContas(){
                     <InputText name="icone" label="ícone" id="icone"/>
 
                     <div className="flex justify-around mt-4">
-                        <Button href="/contas" variant="secundary">cancelar</Button>
+                        <Button href="/solicitacoes" variant="secundary">cancelar</Button>
                         <Button type="button">salvar</Button>
                     </div>
                     <p className="text-red-500">{erro}</p>
