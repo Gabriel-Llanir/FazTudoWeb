@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache"
 
 export async function create(formData){
-    const url = "http://localhost:8080/api/contas"
+    const url = "http://localhost:8080/api/solicitacoes"
     const options = {
         method: "POST",
         body: JSON.stringify(Object.fromEntries(formData)),
@@ -16,7 +16,7 @@ export async function create(formData){
         return {message: "Erro ao cadastrar"}
     }
     
-    revalidatePath("/contas")
+    revalidatePath("/solicitacoes")
     return {message: "ok"}
        
 }
