@@ -2,12 +2,7 @@ import NavBar from "@/components/NavBar";
 import DataRow from "./DataRow";
 import Button from "@/components/Button";
 import { PlusIcon } from "@heroicons/react/24/outline";
-
-async function getSolicitacoes() {
-  const url = "http://localhost:8080/api/solicitacoes"
-  const resp = await fetch(url)
-  return resp.json()
-}
+import { getSolicitacoes } from "@/actions/solicitacoes";
 
 export default async function Solicitacoes() {
   const data = await getSolicitacoes()
