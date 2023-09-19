@@ -2,8 +2,9 @@
 
 import { revalidatePath } from "next/cache"
 
+const url = process.env.NEXT_PUBLIC_BASE_URL +  "/solicitacoes"
+
 export async function create(formData){
-    const url = "http://localhost:8080/api/solicitacoes"
     const options = {
         method: "POST",
         body: JSON.stringify(Object.fromEntries(formData)),
@@ -20,3 +21,8 @@ export async function create(formData){
     return {message: "ok"}
        
 }
+
+export async function getSolicitacoes() {
+    const resp = await fetch(url)
+    return resp.json()
+  }
