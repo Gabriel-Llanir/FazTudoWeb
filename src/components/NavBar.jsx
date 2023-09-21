@@ -7,23 +7,13 @@ export default function NavBar({ active }) {
                 <li>
                     <Link href="/">
                         <h1 className="text-2xl text-slate-100">
-                            Não Falindo
+                            FazTudo
                         </h1>
                     </Link>
                 </li>
                 <li>
-                    <Link className={active=="despesas" && "text-slate-100"} href="/despesas">
-                        despesas
-                    </Link>
-                </li>
-                <li>
-                    <Link className={active=="contas" && "text-slate-100"} href="/contas">
-                        contas
-                    </Link>
-                </li>
-                <li>
-                    <Link className={active=="categorias" && "text-slate-100"} href="/categorias">
-                        categorias
+                    <Link className={active=="solicitacoes" && "text-slate-100"} href="/solicitacoes">
+                        Solicitações
                     </Link>
                 </li>
                 

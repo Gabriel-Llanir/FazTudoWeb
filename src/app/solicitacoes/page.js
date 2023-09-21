@@ -18,7 +18,7 @@ export default async function Solicitacoes() {
             icon={<PlusIcon className="h6 w-6" />}
             href="/solicitacoes/form"
           >
-            criar solicitação
+            Criar solicitação
           </Button>
         </div>
 

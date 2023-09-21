@@ -13,8 +13,8 @@ export default function SolicitacaoError({error, reset}) {
         <p>{error.message}</p>
 
         <div className="flex gap-3 justify-between mt-3">
-            <Button variant="secundary" href="/">voltar para home</Button>
-            <Button onClick={reset}>tentar novamente</Button>
+            <Button variant="secundary" href="/">Voltar para home</Button>
+            <Button onClick={reset}>Tentar novamente</Button>
         </div>
       </main>
     </>

@@ -1,6 +1,6 @@
 "use client"
 
-import { create } from "@/actions/contas";
+import { create } from "@/actions/solicitacoes";
 import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";
@@ -22,7 +22,7 @@ export default function FormSolicitacao(){
    
     return (
         <>
-            <NavBar active={"contas"} />
+            <NavBar active={"solicitacoes"} />
             
             <main className="bg-slate-900 mt-10 m-auto max-w-lg p-2 rounded">
                 <h2 className="text-2xl font-bold">Criar solicitação</h2>
@@ -33,8 +33,8 @@ export default function FormSolicitacao(){
                     <InputText name="icone" label="ícone" id="icone"/>
 
                     <div className="flex justify-around mt-4">
-                        <Button href="/solicitacoes" variant="secundary">cancelar</Button>
-                        <Button type="button">salvar</Button>
+                        <Button href="/solicitacoes" variant="secundary">Cancelar</Button>
+                        <Button type="button">Salvar</Button>
                     </div>
                     <p className="text-red-500">{erro}</p>
                 </form>
