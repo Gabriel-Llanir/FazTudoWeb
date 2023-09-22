@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
-import { apagar } from '@/actions/solicitacoes';
+import { apagar } from '@/actions/publicacoes';
 import toast from 'react-hot-toast';
 import { useToast } from '@/hooks/toast';
 
@@ -38,7 +38,7 @@ export default function DropMenu({ idConta }) {
   };
 
   const handleEdit = () => {
-    push(`/solicitacoes/${idSolicitacao}/edit`)
+    push(`/publicacoes/${idSolicitacao}/edit`)
   }
 
   const handleDelete = async () => {

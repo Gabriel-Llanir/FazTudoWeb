@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 
-const url = process.env.NEXT_PUBLIC_BASE_URL +  "/solicitacoes"
+const url = process.env.NEXT_PUBLIC_BASE_URL +  "/publicacoes"
 
 export async function create(formData){
     const options = {
@@ -17,7 +17,7 @@ export async function create(formData){
         return {message: "Erro ao cadastrar"}
     }
     
-    revalidatePath("/solicitacoes")
+    revalidatePath("/publicacoes")
     return {message: "ok"}
        
 }

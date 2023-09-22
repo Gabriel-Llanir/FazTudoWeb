@@ -1,6 +1,6 @@
 "use client"
 
-import { create } from "@/actions/solicitacoes";
+import { create } from "@/actions/publicacoes";
 import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";
@@ -14,7 +14,7 @@ export default function FormSolicitacao(){
     async function onCreate(formData){
         const resp = await create(formData)
         if (resp.message === "ok"){
-            redirect("/solicitacoes")
+            redirect("/publicacoes")
             return
         }
         setErro(resp.message)
@@ -33,7 +33,7 @@ export default function FormSolicitacao(){
                     <InputText name="icone" label="ícone" id="icone"/>
 
                     <div className="flex justify-around mt-4">
-                        <Button href="/solicitacoes" variant="secundary">Cancelar</Button>
+                        <Button href="/publicacoes" variant="secundary">Cancelar</Button>
                         <Button type="button">Salvar</Button>
                     </div>
                     <p className="text-red-500">{erro}</p>

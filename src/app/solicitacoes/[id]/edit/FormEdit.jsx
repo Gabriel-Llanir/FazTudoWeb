@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import { useState } from "react";
 import { useRouter } from 'next/navigation'
-import { update } from "@/actions/solicitacao";
+import { update } from "@/actions/publicacoes";
 
 export default function FormSolicitacaoEdit({solicitacao}) {
     const [erro, setErro] = useState("")
@@ -17,7 +17,7 @@ export default function FormSolicitacaoEdit({solicitacao}) {
             setErro(resp.message)
             return
         }
-        push("/solicitacao")
+        push("/publicacoes")
     }
 
     function handleFieldChange(field, value){
@@ -49,7 +49,7 @@ export default function FormSolicitacaoEdit({solicitacao}) {
                 />
 
                 <div className="flex justify-around mt-4">
-                    <Button href="/solicitacoes" variant="secundary">cancelar</Button>
+                    <Button href="/publicacoes" variant="secundary">cancelar</Button>
                     <Button type="button">salvar</Button>
                 </div>
                 <p className="text-red-500">{erro}</p>
