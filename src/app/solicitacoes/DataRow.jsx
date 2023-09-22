@@ -11,6 +11,7 @@ export default function DataRow({solicitacao}){
             <div className="flex gap-2 items-center">
               <span>R$100.00</span>
               <DropMenu />
+              <DropMenu idSolicitacao={solicitacao.id} />
             </div>
         </div>
     )
