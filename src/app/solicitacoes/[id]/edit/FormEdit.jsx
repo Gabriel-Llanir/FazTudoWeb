@@ -21,8 +21,8 @@ export default function FormSolicitacaoEdit({solicitacao}) {
     }
 
     function handleFieldChange(field, value){
-        setContaEdit({
-            ...contaEdit,
+        setSolicitacaoEdit({
+            ...solicitacaoEdit,
             [field]: value
         })
     }
