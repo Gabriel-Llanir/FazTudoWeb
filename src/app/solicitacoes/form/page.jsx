@@ -1,6 +1,6 @@
 "use client"
 
-import { create } from "@/actions/publicacoes";
+import { create } from "@/actions/solicitacoes";
 import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";
@@ -8,13 +8,13 @@ import { useState } from "react";
 import { redirect } from 'next/navigation'
 
 
-export default function FormSolicitacao(){
+export default function FormSolicitacoes(){
     const [erro, setErro] = useState("")
 
     async function onCreate(formData){
         const resp = await create(formData)
         if (resp.message === "ok"){
-            redirect("/publicacoes")
+            redirect("/solicitacoes")
             return
         }
         setErro(resp.message)
@@ -33,7 +33,7 @@ export default function FormSolicitacao(){
                     <InputText name="icone" label="ícone" id="icone"/>
 
                     <div className="flex justify-around mt-4">
-                        <Button href="/publicacoes" variant="secundary">Cancelar</Button>
+                        <Button href="/solicitacoes" variant="secundary">Cancelar</Button>
                         <Button type="button">Salvar</Button>
                     </div>
                     <p className="text-red-500">{erro}</p>
