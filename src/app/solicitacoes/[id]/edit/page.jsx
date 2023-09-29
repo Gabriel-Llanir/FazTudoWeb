@@ -1,15 +1,15 @@
-import { getSolicitacao } from "@/actions/publicacoes";
+import { getSolicitacao } from "@/actions/solicitacoes";
 import NavBar from "@/components/NavBar";
 import FormSolicitacaoEdit from "./FormEdit";
 
 
-export default async function FormSolicitacao({params}){
+export default async function FormSolicitacoes({params}){
     
     const solicitacao = await getSolicitacao(params.id)
    
     return (
         <>
-            <NavBar active={"solicitacao"} />
+            <NavBar active={"solicitacoes"} />
             <FormSolicitacaoEdit solicitacao={solicitacao} />
             
         </>
