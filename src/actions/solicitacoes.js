@@ -44,7 +44,7 @@ export async function apagar(id){
     revalidatePath("/solicitacoes")
 }
 
-export async function getSolicitacoes(id){
+export async function getSolicitacao(id){
     const getUrl =  url + "/" + id
     const resp = await fetch(getUrl)
 
