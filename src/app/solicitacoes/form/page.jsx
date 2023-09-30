@@ -5,8 +5,7 @@ import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";
 import { useState } from "react";
-import { redirect } from 'next/navigation'
-
+import { redirect } from 'next/navigation';
 
 export default function FormSolicitacoes(){
     const [erro, setErro] = useState("")
