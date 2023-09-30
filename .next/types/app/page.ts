@@ -1,4 +1,4 @@
-// File: C:\Users\user\Documents\FIAP\2TDSA\Digital\faz_tudo_web\src\app\page.js
+// File: C:\Users\user\Documents\FIAP\2TDSA\Digital\FazTudoWeb\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

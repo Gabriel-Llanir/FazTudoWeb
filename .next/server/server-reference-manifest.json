@@ -1,19 +1,19 @@
 {
   "node": {
-    "c073bbdcf490ca45a431a2cbd4f9354e944968f2": {
+    "fa785ecf65f88fb3bbbcb2cb9d4de57a923a27c2": {
       "workers": {
-        "app/solicitacoes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cuser%5C%5CDocuments%5C%5CFIAP%5C%5C2TDSA%5C%5CDigital%5C%5Cfaz_tudo_web%5C%5Csrc%5C%5Cactions%5C%5Csolicitacoes.js%22%2C%5B%22create%22%2C%22getSolicitacoes%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cuser%5C%5CDocuments%5C%5CFIAP%5C%5C2TDSA%5C%5CDigital%5C%5CFazTudoWeb%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/solicitacoes/page": "rsc"
+        "app/page": "actionBrowser"
       }
     },
-    "4b111acea1c9d6d61590cf72003a275a49a90935": {
+    "952606d2d0502a7d73d2c8edd1f70677d4fcac8f": {
       "workers": {
-        "app/solicitacoes/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cuser%5C%5CDocuments%5C%5CFIAP%5C%5C2TDSA%5C%5CDigital%5C%5Cfaz_tudo_web%5C%5Csrc%5C%5Cactions%5C%5Csolicitacoes.js%22%2C%5B%22create%22%2C%22getSolicitacoes%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Cuser%5C%5CDocuments%5C%5CFIAP%5C%5C2TDSA%5C%5CDigital%5C%5CFazTudoWeb%5C%5Csrc%5C%5Cactions%5C%5Cauth.js%22%2C%5B%22serverLogin%22%2C%22serverLogout%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/solicitacoes/page": "rsc"
+        "app/page": "actionBrowser"
       }
     }
   },
