@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import { PlusIcon } from "@heroicons/react/24/outline";
 import { getSolicitacoes } from "@/actions/solicitacoes";
 
-export default async function Solicitacoes() {
+export default async function Publicacoes() {
   const data = await getSolicitacoes()
 
   return (
