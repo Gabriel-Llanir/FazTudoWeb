@@ -38,7 +38,7 @@ export default function DropMenu({ idConta }) {
   };
 
   const handleEdit = () => {
-    push(`/solicitacoes/${idSolicitacao}/edit`)
+    push(`/publicacao/${idSolicitacao}/edit`)
   }
 
   const handleDelete = async () => {

@@ -8,6 +8,6 @@ export function middleware(request) {
 
 export const config = {
   matcher: [
-    '/solicitacoes/:path*',
+    '/publicacao/:path*',
   ]
 }

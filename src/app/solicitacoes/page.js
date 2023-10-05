@@ -16,7 +16,7 @@ export default async function Solicitacoes() {
           <h2 className="text-2xl font-bold">Solicitacoes</h2>
           <Button 
             icon={<PlusIcon className="h6 w-6" />}
-            href="/solicitacoes/form"
+            href="/publicacao/form"
           >
             Criar solicitação
           </Button>

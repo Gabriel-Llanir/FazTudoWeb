@@ -17,7 +17,7 @@ export default function FormSolicitacaoEdit({solicitacao}) {
             setErro(resp.message)
             return
         }
-        push("/solicitacoes")
+        push("/publicacao")
     }
 
     function handleFieldChange(field, value){
@@ -49,7 +49,7 @@ export default function FormSolicitacaoEdit({solicitacao}) {
                 />
 
                 <div className="flex justify-around mt-4">
-                    <Button href="/solicitacoes" variant="secundary">cancelar</Button>
+                    <Button href="/publicacao" variant="secundary">cancelar</Button>
                     <Button type="button">salvar</Button>
                 </div>
                 <p className="text-red-500">{erro}</p>
