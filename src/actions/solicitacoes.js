@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache"
 import { cookies } from 'next/headers'
 
-const url = process.env.NEXT_PUBLIC_BASE_URL +  "/solicitacoes"
+const url = process.env.NEXT_PUBLIC_BASE_URL +  "/publicacoes"
 
 export async function create(formData){
     const token = cookies().get("faztudo_token")
