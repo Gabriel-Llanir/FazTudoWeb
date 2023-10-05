@@ -9,7 +9,7 @@ export default async function FormSolicitacoes({params}){
    
     return (
         <>
-            <NavBar active={"solicitacoes"} />
+            <NavBar active={"publicacao"} />
             <FormSolicitacaoEdit solicitacao={solicitacao} />
             
         </>

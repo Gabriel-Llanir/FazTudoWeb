@@ -27,7 +27,7 @@ export default function NavBar({ active }) {
                     </Link>
                 </li>
                 <li>
-                    <Link className={active=="solicitacoes" && "text-slate-100"} href="/publicacao">
+                    <Link className={active=="publicacao" && "text-slate-100"} href="/publicacao">
                         solicitacoes
                     </Link>
                 </li>

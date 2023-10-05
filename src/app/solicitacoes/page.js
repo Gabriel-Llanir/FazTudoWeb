@@ -9,7 +9,7 @@ export default async function Solicitacoes() {
 
   return (
     <>
-      <NavBar active={"solicitacoes"} />
+      <NavBar active={"publicacao"} />
 
       <main className="bg-slate-900 m-12 p-4 rounded">
         <div className="flex justify-between items-center">

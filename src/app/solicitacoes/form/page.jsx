@@ -21,7 +21,7 @@ export default function FormSolicitacoes(){
    
     return (
         <>
-            <NavBar active={"solicitacoes"} />
+            <NavBar active={"publicacao"} />
             
             <main className="bg-slate-900 mt-10 m-auto max-w-lg p-2 rounded">
                 <h2 className="text-2xl font-bold">Criar solicitação</h2>
