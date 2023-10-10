@@ -6,7 +6,7 @@ import { cookies } from 'next/headers'
 const url = process.env.NEXT_PUBLIC_BASE_URL +  "/publicacao"
 
 export async function create(formData){
-    const token = cookies().get("faztudo_token")
+    const token = cookies().get("faztudoweb_token")
     const options = {
         method: "POST",
         body: JSON.stringify(Object.fromEntries(formData)),
