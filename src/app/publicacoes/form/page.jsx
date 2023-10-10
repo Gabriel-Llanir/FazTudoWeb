@@ -1,6 +1,6 @@
 "use client"
 
-import { create } from "@/actions/solicitacoes";
+import { create } from "@/actions/publicacoes";
 import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import NavBar from "@/components/NavBar";

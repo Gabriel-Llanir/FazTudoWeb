@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import DataRow from "./DataRow";
 import Button from "@/components/Button";
 import { PlusIcon } from "@heroicons/react/24/outline";
-import { getSolicitacoes } from "@/actions/solicitacoes";
+import { getSolicitacoes } from "@/actions/publicacoes";
 
 export default async function Publicacoes() {
   const data = await getSolicitacoes()

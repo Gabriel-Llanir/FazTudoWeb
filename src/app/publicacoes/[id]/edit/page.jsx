@@ -1,4 +1,4 @@
-import { getSolicitacao } from "@/actions/solicitacoes";
+import { getSolicitacao } from "@/actions/publicacoes";
 import NavBar from "@/components/NavBar";
 import FormSolicitacaoEdit from "./FormEdit";
 

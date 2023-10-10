@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import InputText from "@/components/InputText";
 import { useState } from "react";
 import { useRouter } from 'next/navigation'
-import { update } from "@/actions/solicitacoes";
+import { update } from "@/actions/publicacoes";
 
 export default function FormSolicitacaoEdit({solicitacao}) {
     const [erro, setErro] = useState("")
